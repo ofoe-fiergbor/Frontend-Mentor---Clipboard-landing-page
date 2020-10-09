@@ -1,0 +1,44 @@
+.header {
+  height: 80vh;
+  // background-color: orange;
+  @include flexbox(column, center, center);
+  padding-top: 20vh;
+  div {
+    &:first-child {
+      @include dimensions(170px, 170px);
+
+      position: relative;
+    }
+  }
+  h1 {
+    padding-top: 7vh;
+    font-size: 50px;
+    color: $darkGrayishBlue;
+  }
+  p {
+    text-align: center;
+    color: $grayishBlue;
+    padding-top: 3vh;
+  }
+}
+.buttons {
+  width: 30%;
+  @include flexbox(row, space-evenly, flex-end);
+  button {
+    margin-top: 5em;
+    color: #fff;
+    font-weight: bold;
+    &:first-child {
+      @include dimensions(15em, 3.5em);
+      border-radius: 25px;
+      background-color: $strongCyan;
+      border: none;
+    }
+    &:nth-child(2) {
+      @include dimensions(15em, 3.5em);
+      border-radius: 25px;
+      background-color: $lightBlue;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,362 @@
+.header {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20vh;
+}
+
+.header div:first-child {
+  height: 170px;
+  width: 170px;
+  position: relative;
+}
+
+.header h1 {
+  padding-top: 7vh;
+  font-size: 50px;
+  color: #4c545d;
+}
+
+.header p {
+  text-align: center;
+  color: #9fabb2;
+  padding-top: 3vh;
+}
+
+.buttons {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.buttons button {
+  margin-top: 5em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.buttons button:first-child {
+  height: 3.5em;
+  width: 15em;
+  border-radius: 25px;
+  background-color: #26baa4;
+  border: none;
+}
+
+.buttons button:nth-child(2) {
+  height: 3.5em;
+  width: 15em;
+  border-radius: 25px;
+  background-color: #6173ff;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 500vh;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  position: relative;
+}
+
+body h1, body h2 {
+  color: #4c545d;
+}
+
+body p {
+  color: #9fabb2;
+  font-size: 17px;
+}
+
+body img:first-child {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+}
+
+body img:nth-child(2) {
+  display: none;
+}
+
+body button {
+  outline: none;
+}
+
+body button:hover {
+  -webkit-filter: brightness(120%) saturate(120%);
+          filter: brightness(120%) saturate(120%);
+}
+
+.about1 {
+  margin-top: 20vh;
+  height: 100vh;
+}
+
+.about_header {
+  height: 20%;
+}
+
+.about_header h1 {
+  text-align: center;
+  margin-bottom: .6em;
+  font-size: 40px;
+}
+
+.about_header p {
+  text-align: center;
+  margin-bottom: 5em;
+  line-height: 1.5em;
+}
+
+.inner_about_ctn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75%;
+  margin-top: 5%;
+}
+
+.inner_about_ctn .img_ctn {
+  width: 50%;
+  position: relative;
+  margin-right: 8vw;
+}
+
+.inner_about_ctn .img_ctn img {
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+}
+
+.inner_about_ctn .right_ctn {
+  height: 90%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  line-height: 1.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inner_about_ctn .right_ctn div {
+  margin-bottom: 3em;
+}
+
+.utility {
+  height: 100vh;
+  margin-top: 10vh;
+}
+
+.utility .inner_utility {
+  text-align: center;
+}
+
+.utility .inner_utility h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: .6em;
+}
+
+.utility .inner_utility p {
+  line-height: 1.5em;
+}
+
+.utility .cards {
+  padding: 0 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60%;
+}
+
+.utility .cards .card {
+  text-align: center;
+  height: 70%;
+  padding-top: 2%;
+  padding-bottom: 10%;
+}
+
+.utility .cards .card h1 {
+  margin-top: 1em;
+  margin-bottom: .3em;
+}
+
+.utility .cards .card p {
+  line-height: 1.5em;
+}
+
+.utility .cards .card_img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: auto;
+}
+
+.logo_cards {
+  height: 25vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.logo_cards .logo_card {
+  width: 12%;
+  position: relative;
+}
+
+.features {
+  height: 100vh;
+  margin-top: 15vh;
+}
+
+.features div {
+  margin-bottom: 10vh;
+}
+
+.features div:first-child h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: .6em;
+}
+
+.features div:first-child p {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.features .image_ctn2 {
+  width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.footer h1 {
+  padding-top: 7vh;
+  font-size: 50px;
+  color: #4c545d;
+}
+
+.footer p {
+  text-align: center;
+  color: #9fabb2;
+  padding-top: 3vh;
+}
+
+footer {
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: yellow;
+  padding-top: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .logo_ctn {
+  height: 80px;
+  width: 80px;
+  position: relative;
+}
+
+footer div h3 {
+  padding-bottom: 1em;
+}
+
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10%;
+}
+
+footer .social div {
+  height: 30px;
+  width: 30px;
+  position: relative;
+}
+/*# sourceMappingURL=style.css.map */

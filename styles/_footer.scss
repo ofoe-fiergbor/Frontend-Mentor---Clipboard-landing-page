@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  h1 {
+    padding-top: 7vh;
+    font-size: 50px;
+    color: $darkGrayishBlue;
+  }
+  p {
+    text-align: center;
+    color: $grayishBlue;
+    padding-top: 3vh;
+  }
+}
+
+footer {
+  @include dimensions(100%, 20vh);
+  position: absolute;
+  bottom: 0;
+  background-color: yellow;
+  padding-top: 2%;
+  @include flexbox(row, space-evenly, flex-start);
+  .logo_ctn {
+    @include dimensions(80px, 80px);
+
+    position: relative;
+  }
+  div {
+    h3 {
+      padding-bottom: 1em;
+    }
+  }
+  .social {
+    @include flexbox(row, space-between, center);
+    width: 10%;
+
+    div {
+      @include dimensions(30px, 30px);
+      position: relative;
+    }
+  }
+}

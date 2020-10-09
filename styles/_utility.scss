@@ -1,0 +1,55 @@
+.utility{
+    height: 100vh;
+    margin-top: 10vh;
+    .inner_utility{
+        text-align: center;
+        h1{
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: .6em;
+        }
+        p{
+            line-height: 1.5em;
+        }
+    }
+    .cards{
+        padding: 0 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60%;
+
+        .card{
+            text-align: center;
+            // background-color: yellow;
+            height: 70%;
+            padding-top: 2%;
+            padding-bottom: 10%;
+            h1{
+                margin-top: 1em;
+                margin-bottom: .3em;
+            }
+            p{
+                line-height: 1.5em;
+
+            }
+        }
+        .card_img{
+            width: 40px;
+            height: 40px;
+            position: relative;
+            margin: auto;
+        }
+
+    }
+}
+
+.logo_cards{
+    @include dimensions(100%, 25vh);
+    display: flex;
+    justify-content: space-evenly;
+    .logo_card{
+        width: 12%;
+        position: relative;
+    }
+}
