@@ -1,45 +1,111 @@
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.footer{
+  margin-top: 20vh;
   h1 {
-    padding-top: 7vh;
-    font-size: 50px;
-    color: $darkGrayishBlue;
-  }
-  p {
+    font-size: 40px;
+    margin-bottom: 1.5vh;
     text-align: center;
-    color: $grayishBlue;
-    padding-top: 3vh;
   }
+  p{
+    line-height: 3.6vh;
+    text-align: center;
+    padding: 0 28%;
+  }
+  .buttons{
+      margin: auto;
+      width: 30%;
+      margin-top: 5vh;
+      @include flexbox(row, space-between, center);
+      button{
+        width: 210px;
+        height: 45px;
+        border-radius: 20px;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        -webkit-box-shadow: -1px 10px 10px -3px rgba(0, 0, 0, 0.71);
+        box-shadow: -1px 10px 10px -3px rgba(0, 0, 0, 0.71);
+  
+
+          &:first-child{
+              background-color: $strongCyan;
+              &:hover{
+                  filter: brightness(120%) saturate(120%);
+              }
+          }
+          &:nth-child(2){
+            background-color: $lightBlue;
+            &:hover{
+                filter: brightness(120%) saturate(120%);
+            }
+
+          }
+      }
+  }
+
+}
+footer{
+    margin-top: 20vh;
+    @include flexbox(row, space-evenly, center);
+    height: 20vh;
+    background-color: hsla(202, 11%, 66%, 0.178);
+    .logo{
+        transform: scale(.5);
+    }
+    div{
+    @include flexbox(column, space-between, flex-start);
+    height: 40%;
+    }
+    .social{
+        @include flexbox(row, space-between, center);
+        width: 10%;
+        margin-left: 20%;
+    }
 }
 
-footer {
-  @include dimensions(100%, 20vh);
-  position: absolute;
-  bottom: 0;
-  background-color: yellow;
-  padding-top: 2%;
-  @include flexbox(row, space-evenly, flex-start);
-  .logo_ctn {
-    @include dimensions(80px, 80px);
-
-    position: relative;
-  }
-  div {
-    h3 {
-      padding-bottom: 1em;
+@media screen and (max-width: 380px) {
+  .footer{
+    h1{
+      font-size: $fiftyPx;
+    }
+    p{
+      padding: 0 10%;
+    }
+    .buttons{
+      @include flexbox(column, space-between, center);
+      width: 100%;
+      height: 16vh;
+      button{
+        width: 80%;
+        height: 50px;
+        -webkit-box-shadow: -1px 10px 10px -3px rgba(0, 0, 0, 0.71);
+        box-shadow: -1px 10px 10px -3px rgba(0, 0, 0, 0.71);
+  
+      }
     }
   }
-  .social {
-    @include flexbox(row, space-between, center);
-    width: 10%;
-
-    div {
-      @include dimensions(30px, 30px);
-      position: relative;
+  footer{
+    @include flexbox(column, center, center);
+    height: 90vh;
+    .logo{
+      margin-bottom: 5vh;
+    }
+    div{
+      @include flexbox(column, space-between, center);
+      margin-bottom: 20px;
+      height: 10%;
+      
+      // background-color: orange;
+      p{
+        line-height: 3vh;
+        font-size: 25px;
+        font-weight: 500;
+      }
+      
+    }
+    .social{
+      width: 50%;
+      padding: 0;
+      margin: auto;
     }
   }
 }

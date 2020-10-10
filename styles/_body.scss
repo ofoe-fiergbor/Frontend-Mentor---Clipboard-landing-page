@@ -6,33 +6,39 @@
 
 body {
   width: 100%;
-  min-height: 500vh;
-  font-size: 18px;
-  font-family: $fontFamily;
+//   height: 500vh;
   position: relative;
-  h1, h2{
+  font-family: $fontFamily;
+  font-size: 18px;
+  overflow-x: hidden;
+  .bg_img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+  .bg_img_mobile {
+    display: none;
+  }
+  h1,
+  h2 {
     color: $darkGrayishBlue;
   }
-  p{
+  p {
     color: $grayishBlue;
-    font-size: 17px;
-
   }
-  img {
-    &:first-child {
-      position: absolute;
-      width: 100%;
-      top: 0;
-      right: 0;
-    }
-    &:nth-child(2) {
+}
+
+@media screen and (max-width: 380px) {
+  body{
+    .bg_img{
       display: none;
     }
-  }
-  button{
-    outline: none;
-    &:hover{
-      filter: brightness(120%) saturate(120%);
+    .bg_img_mobile{
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
     }
   }
+
 }

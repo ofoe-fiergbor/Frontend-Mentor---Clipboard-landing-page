@@ -1,23 +1,28 @@
 .features{
-    height: 100vh;
-    margin-top: 15vh;
-    div{
-        margin-bottom: 10vh;
-        &:first-child{
-            h1{
-                font-size: 40px;
-                text-align: center;
-                margin-bottom: .6em;
-            }
-            p{
-                text-align: center;
-                line-height: 1.5em;
-            }
-        }
+    margin-top: 20vh;
+    text-align: center;
+    h1 {
+        margin-bottom: 1.5vh;
+        font-size: 40px;
     }
-    .image_ctn2{
-        width: 60%;
-        position: relative;
-        margin: auto;
+    p {
+        line-height: 3.6vh;
+        margin-bottom: 10vh;
+        padding: 0 28%;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .features{
+        h1{
+            font-size: $fiftyPx;
+        }
+        p{
+            padding: 0 7%;
+        }
+        img{
+            width: 90%;
+        }
     }
 }
